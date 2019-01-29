@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/shou" android:title="收藏"></item>
+    <item android:id="@+id/fenx" android:title="分享"></item>
+    <item android:id="@+id/jubao" android:title="举报"></item>
+</menu>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSmogBlue">
+
+
+    <LinearLayout
+        android:layout_alignParentBottom ="true"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:id="@+id/start"
+            android:textColor="#FF4A4A"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textSize="16dp"
+            android:text="start/pause"
+            />
+
+
+        <Button
+            android:id="@+id/btn_select"
+            android:textColor="#FF4A4A"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:background="@color/colorAccent"
+            android:text="select a video"
+            android:textSize="16dp"
+        />
+
+
+        <EditText
+            android:id="@+id/s_id"
+            android:textColor="#FF4A4A"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:paddingLeft="30dp"
+            android:hint="请输入ID："
+            android:textSize="16dp"
+            android:text="1234789624723"
+            />
+        <EditText
+            android:id="@+id/s_name"
+            android:textColor="#FF4A4A"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="请输入NAME："
+            android:textSize="16dp"
+            android:text="jiahuidfe"
+            />
+        <Button
+            android:id="@+id/btn_post"
+            android:textColor="#FF4A4A"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:background="@color/colorAccent"
+            android:text="post it"
+            android:textSize="16dp"
+             />
+
+
+    </LinearLayout>
+    <SurfaceView
+        android:layout_above="@+id/ll"
+        android:id="@+id/surface_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_above="@+id/ll"
+        android:scaleType="centerCrop"
+        android:id="@+id/action_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

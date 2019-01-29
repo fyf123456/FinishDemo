@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:textColor="#FF4A4A"
+        android:shadowColor="#00F9E4"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:id="@+id/aaa"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我 的 点 赞" />
+
+    <TextView
+        android:textColor="#FF4AD8"
+        android:shadowColor="#00F947"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bbb"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="我 的 收 藏" />
+
+    <TextView
+        android:textColor="#AB4AFF"
+        android:shadowColor="#D4F900"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccc"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="我 的 分 享" />
+
+    <TextView
+        android:textColor="#4A77FF"
+        android:shadowColor="#F99E00"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ddd"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="我 的 举 报" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eee"
+        android:background="#88B198"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="显示：" />
+
+
+</RelativeLayout>

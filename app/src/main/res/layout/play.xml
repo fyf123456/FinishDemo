@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btnname"
+        android:textSize="16dp"
+        android:textColor="#990D0D"
+        android:background="#4336B8"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:alpha="0.4" />
+    <TextView
+        android:id="@+id/btntime"
+        android:textColor="#990D0D"
+        android:background="#481B96"
+        android:textSize="16dp"
+        android:padding="3dp"
+        android:layout_below="@+id/btnname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时间："
+        android:alpha="0.4" />
+
+    <FrameLayout
+        android:layout_below="@+id/btntime"
+        android:id="@+id/search_edit_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F2031">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
